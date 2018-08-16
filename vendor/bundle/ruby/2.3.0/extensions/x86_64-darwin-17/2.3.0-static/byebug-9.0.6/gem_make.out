@@ -1,0 +1,19 @@
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+/Users/nasa/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180815-9030-5sylvi.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180815-9030-8d2iqf/byebug

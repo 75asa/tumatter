@@ -1,0 +1,15 @@
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+/Users/nasa/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180815-9030-16zq21h.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/nasa/Gdrive_r75rid/local_document/Ruby/environment/tumatter_app/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180815-9030-1ib7sx2/bindex
