@@ -13,6 +13,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # save method
+      flash[:success] = "Welcom to Tumatter!!"
+      redirect_to @user
     else
       render 'new'
     end
