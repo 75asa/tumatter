@@ -12,7 +12,8 @@ class UsersController < ApplicationController
     # @user = User.new(params[:user])
     @user = User.new(user_params)
     if @user.save
-      # save method
+      # auto save method
+      log_in @user
       flash[:success] = "Welcom to Tumatter!!"
       redirect_to @user
     else

@@ -23,5 +23,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     follow_redirect!
     assert_template 'users/show'
+    # 登録が完了したユーザーが自動ログイン済みか
+    assert is_logged_in?
   end
 end
