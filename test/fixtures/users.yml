@@ -2,6 +2,7 @@ nKent:
   name: Nuas Kent
   email: nkent@example.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 subasic:
   name: Aunn subasic
