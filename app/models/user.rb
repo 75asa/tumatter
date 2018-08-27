@@ -14,6 +14,7 @@ class User < ApplicationRecord
   # 渡された文字列のハッシュ値を返す
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+    BCrypt::Password.new(remember_digest).is_password?(remember_token)
                               BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
@@ -29,10 +30,10 @@ class User < ApplicationRecord
     update_attribute(:remember_digest, User.digest(remember_token))
   end
 
-  # 渡されたトークンがダイジェストと一致した場合にtrueを返す
-  def authenticated?(remember_token)
-    return false if remember_digest.nil?
-    BCrypt::Password.new(remember_digest).is_password?(remember_token)
+  def authenticated?(attribute, token)
+    digest = send("#{attribute}_digest")
+    return false if digest.nil?
+    BCrypt::Password.new(remember_digest).is_password?(token)
   end
 
   # ユーザーのログイン情報を破棄する
