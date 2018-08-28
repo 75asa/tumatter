@@ -26,7 +26,6 @@ module SessionsHelper
     elsif (user_id = cookies.signed[:user_id])
       user = User.find_by(id: user_id)
       # ユーザーIDが存在し、尚且つクッキーに保存された記憶トークンが署名されたものであれば
-      # if user && user.authenticated?(cookies[:remember_token])
       if user && user.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
