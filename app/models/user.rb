@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
   class << self
     # 渡された文字列のハッシュ値を返す
-    def User.digest(string)
+    def digest(string)
       cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
       BCrypt::Password.new(remember_digest).is_password?(remember_token)
                                 BCrypt::Engine.cost
@@ -21,9 +21,9 @@ class User < ApplicationRecord
     end
 
     # ランダムなトークンを返す
-    def User.new_token
+    def new_token
       SecureRandom.urlsafe_base64
-  end
+    end
   end
 
   # 永続セッションの為のユーザーをDBに記憶
