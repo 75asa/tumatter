@@ -84,7 +84,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not nKent.following?(archer)
     nKent.follow(archer)
     assert nKent.following?(archer)
-    assert archer.follwers.include?(nKent)
+    assert archer.followers.include?(nKent)
     nKent.unfollow(archer)
     assert_not nKent.following?(archer)
   end
