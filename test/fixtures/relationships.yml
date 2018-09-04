@@ -1,0 +1,15 @@
+one:
+  follower: nKent
+  followed: lana
+
+two:
+  follower: nKent
+  followed: malory
+
+three:
+  follower: lana
+  followed: nKent
+
+four:
+  follower: archer
+  followed: nKent
