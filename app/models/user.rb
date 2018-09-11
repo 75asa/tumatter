@@ -19,7 +19,12 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 },
               format: { with: VALID_EMAIL_REGEX },
               uniqueness: { case_sensitive: false }
+
   has_secure_password
+  scope :search_by_keyword, -> (keyword) {
+    where("users.name LIKE :keyword",
+            keyword: "%#{sanitize_sql_like(keyword)}") if keyword.present?
+  }
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
     # 渡された文字列のハッシュ値を返す
