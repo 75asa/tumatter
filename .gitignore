@@ -27,3 +27,6 @@
 
 # アップロードされたテスト画像を無視
 /public/uploads
+
+# idea
+.idea/
