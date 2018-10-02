@@ -23,7 +23,7 @@ class User < ApplicationRecord
   has_secure_password
   scope :search_by_keyword, -> (keyword) {
     where("users.name LIKE :keyword",
-            keyword: "%#{sanitize_sql_like(keyword)}") if keyword.present?
+            keyword: "%#{sanitize_sql_like(keyword)}%") if keyword.present?
   }
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
