@@ -26,6 +26,7 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'puma',                  '3.9.1'
 end
 
 group :test do
@@ -40,5 +41,5 @@ group :production do
   gem 'fog', '1.42'
 end
 
-# Windows環境ではtzinfo-dataというgemを含める必要があります
+# Windows環境に於いて必要なgem: tzinfo-data
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
