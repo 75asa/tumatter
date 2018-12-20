@@ -1,0 +1,16 @@
+current directory: /Users/nasa/local_document/Ruby/tumatter/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/ext/json
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -r ./siteconf20181220-61632-1aoqday.rb extconf.rb
+Ignoring bcrypt-3.1.11 because its extensions are not built.  Try: gem pristine bcrypt --version 3.1.11
+Ignoring nokogiri-1.8.4 because its extensions are not built.  Try: gem pristine nokogiri --version 1.8.4
+Ignoring sassc-1.12.1 because its extensions are not built.  Try: gem pristine sassc --version 1.12.1
+creating Makefile
+
+current directory: /Users/nasa/local_document/Ruby/tumatter/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/nasa/local_document/Ruby/tumatter/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/nasa/local_document/Ruby/tumatter/vendor/bundle/ruby/2.3.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" install
